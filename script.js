@@ -104,7 +104,7 @@ document.addEventListener("change", () => {
 		// zyxel	
 		case (router.innerHTML == router1 && action.innerHTML == action1):
 			content.style.display = "block";
-			content.innerHTML = `كيفيه الدخول لصفحه الروتر 
+			content.value = `كيفيه الدخول لصفحه الروتر 
 نكتب فى محرك البحث 192.168.1.1 نضغط انتر  
 او فى البحث الخاص بالموبايل فى المتصفح  نكتب 192.168.1.1 
 اليوز نيم وباسورد الدخول بيكون  فى الغالب   user # admin   password # admin 
@@ -833,9 +833,9 @@ Upstream دى سرعة الابلود downstream دى سرعة الداونلو�
 
 
 	if (content.style.display == "block") {
-		document.querySelector(".copy").style.display = "block"
+		document.querySelector("#copy").style.display = "block"
 	} else {
-		document.querySelector(".copy").style.display = "none"
+		document.querySelector("#copy").style.display = "none"
 	}
 
 
@@ -845,3 +845,31 @@ Upstream دى سرعة الابلود downstream دى سرعة الداونلو�
 
 
 
+
+
+
+
+function fn() {
+	// // let copy = document.querySelector("#copy");
+	// navigator.clipboard.writeText(content).then(() => {
+	// 	// Alert the user that the action took place.
+	// 	// Nobody likes hidden stuff being done under the hood!
+	// 	alert("Copied to clipboard");
+	// });
+
+
+	// Get the text field
+
+	// Select the text field
+	content.select();
+	content.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(content.value);
+
+	// Alert the copied text
+	// alert("Copied the text: " + content.value);
+
+	alert("تم النسخ")
+
+}
