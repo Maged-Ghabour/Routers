@@ -1,0 +1,11 @@
+{
+	"zyxel": ["How to access to cpe page" ,"Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"DN(8245V-56)": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"H188A(zte)": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"TP-Link VN020-F3": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"hg 531 - 532": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"zte108n": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"zte 168": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"],
+	"hg 630 - 633 - dg8045": ["How to access to cpe page","Reset config","Wireless config","DNS" , "MTU" , "Mac Filter" , "Disable Wps" , "Change password for router page" , "Connected devices" , "Firewall" , "Upstream/ Downstream" , "line code"]
+
+}
