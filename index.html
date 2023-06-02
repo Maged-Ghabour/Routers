@@ -1,121 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Setting the pages character encoding -->
+    <meta charset="UTF-8" />
 
-<head>
-	<!-- Setting the pages character encoding -->
-	<meta charset="UTF-8">
+    <!-- The meta viewport will scale my content to any device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- The meta viewport will scale my content to any device width -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-
-
-	<!-- Link to my stylesheet -->
-	<link rel="stylesheet" href="styles.css">
-	<title>Router Helper</title>
-</head>
-
-<body>
-
-	<nav class="navbar bg-dark" data-bs-theme="dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-			<img src="imgs/2.png" alt="Bootstrap" width="50" height="50">
-			</a>
-			<h1 class="text-white">  كندات الرواتر   </h1>
-		</div>
-	</nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
 
 
 
-	<div class="container">
+    <!-- Link to my stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Router Helper</title>
+  </head>
 
-	
+  <body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/2.png" alt="Bootstrap" width="50" height="50" />
+        </a>
+        <h1 class="text-white">كندات الرواتر</h1>
+      </div>
+    </nav>
 
+    <div class="container">
+      <div class="header my-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-body">
+                  Selected Router <span id="router"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-title">
+                <div class="card-body">
+                  Selected Action <span id="city"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="header my-5" >
-				<div class="row">
-				<div class="col-sm-6">
-					<div class="card">
-						<div class="card-title">
-							<div class="card-body">
-								Selected Router <span id="router"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="card">
-						<div class="card-title">
-							<div class="card-body">
-								Selected Action <span id="city"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      <form class="my-5">
+        <div class="row">
+          <div class="col">
+            <label for="router" class="form-label">Select Your Router : </label>
+            <select
+              onchange="getCities(this.value)"
+              name="countries"
+              aria-label="Default select example"
+              class="form-select"
+            >
+              <option value="" disabled selected>Choose a router</option>
+              <option value="zyxel">zyxel</option>
+              <option value="DN(8245V-56)">DN(8245V-56)</option>
+              <option value="H188A(zte)">H188A(zte)</option>
+              <option value="TP-Link VN020-F3">TP-Link VN020-F3</option>
+              <option value="hg 531 - 532">hg 531 - 532</option>
+              <option value="zte108n">zte108n</option>
+              <option value="zte 168">zte 168</option>
+              <option value="hg 630 - 633 - dg8045">
+                hg 630 - 633 - dg8045
+              </option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="router" class="form-label">Select Your Action : </label>
 
-		</div>
+            <select
+              onchange="getCity(this.value)"
+              name="cities"
+              id="cities"
+              disabled
+              aria-label="Default select example"
+              class="form-select"
+            >
+              <option value="">Choose an action</option>
+            </select>
+          </div>
+        </div>
+      </form>
 
-		<form class="my-5">
-			<div class="row">
-				<div class="col">
-					<label for="router" class="form-label">Select Your Router : </label>
-					<select onchange="getCities(this.value)" name="countries" aria-label="Default select example"
-						class="form-select">
-						<option value="" disabled selected>Choose a router</option>
-						<option value="zyxel">zyxel</option>
-						<option value="DN(8245V-56)">DN(8245V-56)</option>
-						<option value="H188A(zte)">H188A(zte)</option>
-						<option value="TP-Link VN020-F3">TP-Link VN020-F3</option>
-						<option value="hg 531 - 532">hg 531 - 532</option>
-						<option value="zte108n">zte108n</option>
-						<option value="zte 168">zte 168</option>
-						<option value="hg 630 - 633 - dg8045">hg 630 - 633 - dg8045</option>
-					</select>
-				</div>
-				<div class="col">
-					<label for="router" class="form-label">Select Your Action : </label>
+      <textarea
+        style="resize: none"
+        id="content"
+        dir="rtl"
+        class="form-control"
+      >
+      </textarea>
 
-					<select onchange="getCity(this.value)" name="cities" id="cities" disabled
-						aria-label="Default select example" class="form-select">
-						<option value="">Choose an action</option>
-					</select>
-				</div>
-			</div>
-		</form>
+      <button id="copy" class="btn btn-primary m-auto my-3" onclick="fn()">
+        انسخ الكنداية
+      </button>
+    </div>
 
+    <script src="js/bootstrap.min.js"></script>
 
-
-		<textarea style="resize:none ; overflow:hidden" id="content" dir="rtl" class="form-control" >
-
-		</textarea>
-
-
-			
-			
-		
-
-		<button id="copy" class="btn btn-primary m-auto my-3" onclick="fn()">انسخ الكنداية</button>
-
-
-	</div>
-
-
-
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- Link to the javascript file -->
-	<script src="script.js"></script>
-
-</body>
-
+    <!-- Link to the javascript file -->
+    <script src="script.js"></script>
+  </body>
 </html>

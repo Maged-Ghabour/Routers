@@ -5,7 +5,7 @@
 #content{
     font-family: 'Cairo' , sans-serif !important;
     display: none;
-    height: 200px !important;
+    min-height: 250px !important;
 
 }
 
