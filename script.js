@@ -223,6 +223,7 @@ TX دى سرعة الابلود
     //  DN(8245V-56)
 
     case router.innerHTML == router2 && action.innerHTML == action1:
+       content.style.display = "block";
       content.innerHTML = `كيفيه الدخول لصفحه الروتر 
 نكتب فى محرك البحث 192.168.1.1 نضغط انتر  
 او فى البحث الخاص بالموبايل فى المتصفح  نكتب 192.168.1.1 
@@ -1203,7 +1204,7 @@ https://justpaste.it/303dw
 
     // hg 630 - 633 - dg8045
 
-    case router.innerHTML == "router8" && action.innerHTML == action1:
+    case router.innerHTML == router8 && action.innerHTML == action1:
       content.style.display = "block";
 
       content.innerHTML = `
@@ -1218,7 +1219,7 @@ password # الموجود فى ضهر الراوتر
 https://justpaste.it/4t25r
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action2:
+    case router.innerHTML == router8 && action.innerHTML == action2:
       content.style.display = "block";
 
       content.innerHTML = `ريست وكونفجريشن  للراوتر
@@ -1237,7 +1238,7 @@ start wizard بعدين
 https://justpaste.it/5fg53
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action3:
+    case router.innerHTML == router8 && action.innerHTML == action3:
       content.style.display = "block";
 
       content.innerHTML = `1- حضرتك يافندم عشان تغير اسم الشبكه والباسورد هتفتح صفحه الراوتر عن طريق 192.168.1.1
@@ -1250,7 +1251,7 @@ https://justpaste.it/5fg53
 وده لينك بيوضح خطوات اعدادات الواي فاي  بالتفصيل  https://justpaste.it/75s6m   
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action4:
+    case router.innerHTML == router8 && action.innerHTML == action4:
       content.style.display = "block";
 
       content.innerHTML = `حضرتك هتفتح اى متصفح وتكتب فى اعلى العنوان 192.168.1.1
@@ -1267,7 +1268,7 @@ save وبعدين تضغط
  https://justpaste.it/7vteu
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action5:
+    case router.innerHTML == router8 && action.innerHTML == action5:
       content.style.display = "block";
 
       content.innerHTML = `Internet هندخل على 
@@ -1283,7 +1284,7 @@ https://justpaste.it/7jnjw
 
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action6:
+    case router.innerHTML == router8 && action.innerHTML == action6:
       content.style.display = "block";
 
       content.innerHTML = `Home Network ندخل على 
@@ -1301,7 +1302,7 @@ Save واخر حاجه ندوس
 https://justpaste.it/73o4u
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action7:
+    case router.innerHTML == router8 && action.innerHTML == action7:
       content.style.display = "block";
 
       content.innerHTML = `"Home network ندخل على 
@@ -1315,7 +1316,7 @@ https://justpaste.it/75s6m
 "
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action8:
+    case router.innerHTML == router8 && action.innerHTML == action8:
       content.style.display = "block";
 
       content.innerHTML = `"maintain ندخل على 
@@ -1333,7 +1334,7 @@ https://justpaste.it/5s8eh
 
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action9:
+    case router.innerHTML == router8 && action.innerHTML == action9:
       content.style.display = "block";
 
       content.innerHTML = `home ندخل 
@@ -1346,7 +1347,7 @@ Wlan devices الاجهزة المتصلة وايرلس
 https://justpaste.it/8ng5o
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action10:
+    case router.innerHTML == router8 && action.innerHTML == action10:
       content.style.display = "block";
 
       content.innerHTML = `"home ندخل 
@@ -1361,7 +1362,7 @@ https://justpaste.it/4qx6n
 
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action11:
+    case router.innerHTML == router8 && action.innerHTML == action11:
       content.style.display = "block";
 
       content.innerHTML = `maintain ندخل على 
@@ -1373,7 +1374,7 @@ downstream line rate دى سرعة الداونلود
 https://justpaste.it/6v9ie
 `;
       break;
-    case router.innerHTML == "router8" && action.innerHTML == action12:
+    case router.innerHTML == router8 && action.innerHTML == action12:
       content.style.display = "block";
 
       content.innerHTML = `internet  ندخل على 
